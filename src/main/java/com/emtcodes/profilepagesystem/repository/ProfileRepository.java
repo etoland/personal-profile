@@ -1,4 +1,8 @@
 package com.emtcodes.profilepagesystem.repository;
 
-public interface ProfileRepository {
+import com.emtcodes.profilepagesystem.model.Profile;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ProfileRepository extends JpaRepository<Profile, Integer> {
+
 }
